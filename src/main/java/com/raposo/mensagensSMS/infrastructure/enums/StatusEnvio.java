@@ -1,6 +1,6 @@
 package com.raposo.mensagensSMS.infrastructure.enums;
 
-public enum statusEnvio {
+public enum StatusEnvio {
     ENVIADO,
     RECEBIDO,
     ERRO_ENVIO;
