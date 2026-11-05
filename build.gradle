@@ -45,10 +45,6 @@ dependencies {
 
 }
 
-tasks.withType(JavaCompile).configureEach {
-	options.compilerArgs += ['-Amapstruct.defaultComponentModel=spring']
-}
-
 tasks.named('test') {
     useJUnitPlatform()
 }
