@@ -1,4 +1,4 @@
-package com.raposo.mensagensSMS.api.DTOs;
+package com.raposo.mensagensSMS.api.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.raposo.mensagensSMS.infrastructure.enums.StatusEnvio;

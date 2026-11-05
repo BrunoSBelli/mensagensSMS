@@ -1,10 +1,12 @@
-package com.raposo.mensagensSMS.api.Mapper;
+package com.raposo.mensagensSMS.api.mapper;
 
-import com.raposo.mensagensSMS.api.DTOs.SmsMessageInDTO;
-import com.raposo.mensagensSMS.api.DTOs.SmsMessageOutDTO;
+import com.raposo.mensagensSMS.api.dto.SmsMessageInDTO;
+import com.raposo.mensagensSMS.api.dto.SmsMessageOutDTO;
 import com.raposo.mensagensSMS.infrastructure.entity.SmsMessageEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+
+import java.util.List;
 
 @Mapper
 public interface SmsMessageConverter {
@@ -15,4 +17,6 @@ public interface SmsMessageConverter {
     SmsMessageEntity paraEntity(SmsMessageInDTO dto);
 
     SmsMessageOutDTO paraDTO(SmsMessageEntity entity);
+
+    List<SmsMessageOutDTO> paraListaDTO(List<SmsMessageEntity> entities);
 }

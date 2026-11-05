@@ -1,10 +1,6 @@
-package com.raposo.mensagensSMS.api.DTOs;
+package com.raposo.mensagensSMS.api.dto;
 
-import com.raposo.mensagensSMS.infrastructure.enums.StatusEnvio;
 import lombok.*;
-
-import java.time.LocalDateTime;
-
 
 
 @Getter
